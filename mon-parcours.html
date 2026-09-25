@@ -10,21 +10,21 @@
 
  </head>
 
+
+
 <body>
-    <main class="flex-direction-row align-item-center h100 gap40">
+    <custom-header
+        breadcrumb='[
+            {"name":"Home","url":"./index.html"},
+            {"name":"Parcours","url":"./mon-parcours.html"}
+        ]'>
+    </custom-header>
+    <main class="flex-direction-row align-item-center gap40 h80">
         <div class="w50 gap20 flex-direction-column">
-            <div>
-                <h2>Je suis</h2>
-                <h1>Simon DURAND</h1>
-            </div>
-            <div class="gap20">
+            <div class="gap20 justify-content-flex-end">
                 <custom-button
-                    text="Mon parcours"
-                    href="mon-parcours.html">
-                </custom-button>
-                <custom-button
-                    text="Mes projets"
-                    href="mes-projets.html">
+                    text="Allez voir"
+                    href="Mes projets.html">
                 </custom-button>
             </div>
         </div>
@@ -36,7 +36,10 @@
             <a href="#" id="text-5"><h1>Illustrations</h1></a>
         </div>
     </main>
+    <custom-footer>
+    </custom-footer>
 </body>
+
 
 <script src="script.js"></script>
 <script src="Composants/Bouton-Primaire/btn-primary.js"></script>
