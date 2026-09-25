@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Connexion au fichier CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Composants/Bouton-Primaire/btn-primary.css">
+
+ </head>
+
+
+
+<body>
+    <custom-header
+        breadcrumb='[
+            {"name":"Home","url":"./Index.html"},
+            {"name":"Projets","url":"./Mes projets.html"}
+        ]'>
+    </custom-header>
+    <main class="flex-direction-row align-item-center gap40 h80">
+        <div class="w50 gap20 flex-direction-column">
+            <div class="gap20 justify-content-flex-end">
+                <custom-button
+                    text="Allez voir"
+                    href="Mes projets.html">
+                </custom-button>
+            </div>
+        </div>
+        <div class="w50">
+            <a href="#" id="text-1"><h1>Charte Graphique</h1></a>
+            <a href="#" id="text-2"><h1>UI Design</h1></a>
+            <a href="#" id="text-3"><h1>Motion Design</h1></a>
+            <a href="#" id="text-4"><h1>Print</h1></a>
+            <a href="#" id="text-5"><h1>Illustrations</h1></a>
+        </div>
+    </main>
+    <custom-footer
+        breadcrumb='[
+            {"name":"Home","url":"./Index.html"},
+            {"name":"Projets","url":"./Mes projets.html"}
+        ]'>
+    </custom-footer>
+</body>
+
+
+<script src="script.js"></script>
+<script src="Composants/Bouton-Primaire/btn-primary.js"></script>

@@ -1,0 +1,46 @@
+.button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+
+    padding: 0.75rem 1.5rem;
+
+    color: var(--blue10);
+    border: solid var(--blue10) 1px;
+
+    text-decoration: none;
+
+    font-family: "Host Grotesk", sans-serif;
+    font-size: 1rem;
+
+    transition: 0.2s ease;
+}
+
+.button .material-symbols-outlined {
+    font-size: 20px;
+
+    opacity: 0;
+    width: 0;
+    margin-left: 0;
+
+    overflow: hidden;
+    transform: translateX(-5px);
+
+    transition:
+        opacity 0.2s ease,
+        width 0.2s ease,
+        margin-left 0.2s ease,
+        transform 0.2s ease;
+}
+
+.button:hover {
+    background-color: var(--bleu80);
+}
+
+.button:hover .material-symbols-outlined {
+    opacity: 1;
+    width: 20px;
+    margin-left: 8px;
+    transform: translateX(0);
+}

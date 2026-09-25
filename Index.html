@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Connexion au fichier CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Composants/Bouton-Primaire/btn-primary.css">
+
+ </head>
+
+<body>
+    <main class="flex-direction-row align-item-center h100 gap40">
+        <div class="w50 gap20 flex-direction-column">
+            <div>
+                <h2>Je suis</h2>
+                <h1>Simon DURAND</h1>
+            </div>
+            <div class="gap20">
+                <custom-button
+                    text="Mon parcours"
+                    href="Mon parcours.html">
+                </custom-button>
+                <custom-button
+                    text="Mes projets"
+                    href="Mes projets.html">
+                </custom-button>
+            </div>
+        </div>
+        <div class="w50">
+            <a href="#" id="text-1"><h1>Charte Graphique</h1></a>
+            <a href="#" id="text-2"><h1>UI Design</h1></a>
+            <a href="#" id="text-3"><h1>Motion Design</h1></a>
+            <a href="#" id="text-4"><h1>Print</h1></a>
+            <a href="#" id="text-5"><h1>Illustrations</h1></a>
+        </div>
+    </main>
+</body>
+
+<script src="script.js"></script>
+<script src="Composants/Bouton-Primaire/btn-primary.js"></script>
