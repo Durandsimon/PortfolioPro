@@ -7,7 +7,7 @@
     --blue100: #000C5C;
     --blue90: #001285;
     --blue80: #0017AD;
-    --bleu-main: #001DD6;
+    --blue-main: #001DD6;
     --blue60: #0D2DFF;
     --blue50: #3953FF;
     --blue40: #6479FF;
@@ -18,7 +18,7 @@
 
 body {
     font-family: "Host Grotesk", sans-serif;
-    background-color: var(--bleu-main);
+    background-color: var(--blue-main);
     margin-right: 7.5rem;
     margin-left: 7.5rem;
 }
@@ -36,14 +36,14 @@ h2{
     font-size: 2.5rem;
     font-weight: 600;
     margin: 0;
-    color: var(--blue20);
+    color: var(--blue10);
 }
 
 h3{
     font-size: 1.25rem;
-    font-weight: 400;
+    font-weight: 600;
     margin: 0;
-    color: var(--blue20);
+    color: var(--blue10);
 }
 
 p{
@@ -51,6 +51,11 @@ p{
     font-weight: 300;
     margin: 0;
     color: var(--blue20);
+    line-height: 1.5rem;
+}
+
+.small{
+    font-size: 0.9rem;
 }
 
 a {
@@ -120,6 +125,19 @@ a>h1{
     justify-content: flex-end;
 }
 
+.justify-content-space-between{
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex-wrap-wrap{
+    flex-wrap: wrap;
+}
+
+.nowrap{
+    white-space: nowrap; 
+}
+
 /* header */
 
 .header {
@@ -152,13 +170,67 @@ a>h1{
     overflow-y: auto;
 
     /* Firefox */
-    scrollbar-width: none;
+/*    scrollbar-width: none;*/
 
     /* IE / ancien Edge */
-    -ms-overflow-style: none;
+    /*-ms-overflow-style: none;*/
+    
 }
 
-/* Chrome, Edge, Safari */
+/* Chrome, Edge, Safari 
 .scroll-block::-webkit-scrollbar {
   display: none;
+}*/
+
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--blue-main);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--blue40);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--blue30);
+}
+
+/* style  mise en gras */
+.bold{
+    background-color: var(--blue90);
+    padding: 0.2rem 0.4rem 0.2rem 0.4rem;
+    color: var(--blue10); 
+    font-weight: 400;
+    white-space: nowrap;
+}
+
+/* style sous ligné */
+.underligne{
+    text-decoration: underline;
+    text-underline-offset: 0.15rem;
+    color: var(--blue10); 
+    white-space: nowrap;
+}
+
+/* style box encadré */
+.box{
+    padding: 0.5rem 0.5rem 0.5rem 1rem;
+    margin: 0.5rem 0rem 0.5rem 0rem;
+    border-left: 1px solid var(--blue30);
+    p {
+        color: var(--blue10);
+    }
+}
+
+.little-box{
+    border-radius: 2rem;
+    border: 1px solid var(--blue30);
+    padding: 0.25rem 0.8rem 0.2rem 0.8rem;
+    p {
+         font-size: 0.8rem;
+    }
 }
