@@ -38,7 +38,7 @@ class CustomFooter extends HTMLElement {
         this.innerHTML = `
             <footer class="footer">
 
-                <div>
+                <div style="margin:1rem 0rem 1rem 0rem">
                     <p>Portfolio 2026</p>
                 </div>
 

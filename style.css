@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Host+Grotesk:wght@300;400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_forward');
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_outward,arrow_forward');
 
 /* Ton CSS ici */
 
@@ -232,5 +232,39 @@ a>h1{
     padding: 0.25rem 0.8rem 0.2rem 0.8rem;
     p {
          font-size: 0.8rem;
+    }
+}
+
+.box-projet{
+    padding: 2rem;
+    height: 100%;
+    border: 1px solid var(--blue30);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: 400ms;
+
+    .material-symbols-outlined{
+        font-size: 4rem;
+        color: var(--blue10);   
+        display: flex;
+        justify-content: flex-end;
+    }
+}
+
+.box-projet:hover{
+    background-color: var(--blue80);
+    h2{
+        text-decoration: underline;
+        text-decoration-thickness: 0.1rem;
+        text-underline-offset: 0.2rem;
+    }
+}
+
+.box-projet:active{
+    background-color: var(--blue90);
+    h2{
+        text-decoration: underline;
+        text-decoration-thickness: 0.2rem;
     }
 }
