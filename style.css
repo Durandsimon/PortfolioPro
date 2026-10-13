@@ -16,9 +16,14 @@
     --blue10: #E7EAFF;
 }
 
+::selection {
+  background: var(--blue100);
+  color: var(--blue10);
+}
+
 body {
     font-family: "Host Grotesk", sans-serif;
-    background-color: var(--blue-main);
+    background-color: var(--blue90);
     margin-right: 7.5rem;
     margin-left: 7.5rem;
 }
@@ -243,6 +248,13 @@ a>h1{
     flex-direction: column;
     justify-content: space-between;
     transition: 400ms;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: linear-gradient(
+    color-mix(in srgb, var(--blue100) 70%, transparent), 
+    color-mix(in srgb, var(--blue100) 70%, transparent)),
+    var(--bg-img);
 
     .material-symbols-outlined{
         font-size: 4rem;
@@ -253,6 +265,10 @@ a>h1{
 }
 
 .box-projet:hover{
+    background-image: linear-gradient(
+    color-mix(in srgb, var(--blue100) 50%, transparent), 
+    color-mix(in srgb, var(--blue100) 60%, transparent)),
+    var(--bg-img);
     background-color: var(--blue80);
     h2{
         text-decoration: underline;
