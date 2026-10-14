@@ -252,8 +252,8 @@ a>h1{
     background-size: cover;
     background-position: center;
     background-image: linear-gradient(
-    color-mix(in srgb, var(--blue100) 70%, transparent), 
-    color-mix(in srgb, var(--blue100) 70%, transparent)),
+    color-mix(in srgb, var(--blue100) 60%, transparent), 
+    color-mix(in srgb, var(--blue100) 60%, transparent)),
     var(--bg-img);
 
     .material-symbols-outlined{
@@ -266,8 +266,8 @@ a>h1{
 
 .box-projet:hover{
     background-image: linear-gradient(
-    color-mix(in srgb, var(--blue100) 50%, transparent), 
-    color-mix(in srgb, var(--blue100) 60%, transparent)),
+    color-mix(in srgb, var(--blue100) 30%, transparent), 
+    color-mix(in srgb, var(--blue100) 40%, transparent)),
     var(--bg-img);
     background-color: var(--blue80);
     h2{
