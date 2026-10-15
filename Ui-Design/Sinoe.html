@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Connexion au fichier CSS -->
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../Composants/Bouton-Primaire/btn-primary.css">
+
+ </head>
+
+
+
+<body>
+    <custom-header
+        breadcrumb='[
+            {"name":"Home","url":"../index.html"},
+            {"name":"UI Design","url":"../ui-design.html"}
+        ]'>
+    </custom-header>
+    <main class="flex-direction-row  gap40 h80">
+        <div class="w50 gap40 flex-direction-column">
+            <h1>SINOE</h1>
+            <p>
+                SINOE® Déchets est une plateforme développée par 
+                l’ADEME qui centralise les données liées à la production et à la gestion des déchets en France. 
+                Elle permet aux collectivités et aux acteurs de l’environnement de consulter des indicateurs, 
+                d’analyser les pratiques de collecte et de traitement, et de comparer les performances des territoires.  <br><br>
+                Dans le cadre de mon alternance chez Scalian, j’ai eu l’opportunité de contribuer à ce projet, en participant à 
+                la refonte de cette plateforme dédiée à la gestion des déchets.
+            </p>   
+            <custom-button
+                text="Voir la maquette"
+                href="https://www.figma.com/design/AeDkKpaSBoSREPQ8Chx6e4/Mes-projets?node-id=5-117910"
+                target="_blank"
+                icon="arrow_outward">
+            </custom-button>         
+        </div>
+        <div class="w50 gap20 flex-direction-column scroll-block">
+            <div  style="padding-right: 1rem;" class="gap20 flex-direction-column scroll-block">
+                <div class="box-img">
+                    <img src="../Images/SINOE/Mock-up-SINOE.png">
+                </div>
+                
+                <div style="padding: 1rem;" class="gap10 flex-direction-column">
+                    <p>
+                    Ma mission principale consistait à concevoir la page d’accueil de l’application. 
+                    Celle-ci devait respecter les principes du DSFR (Système de Design de l’État), 
+                    qui harmonise les interfaces numériques des services publics français.<br><br>
+
+                    En dehors de ces contraintes, je disposais d’une grande liberté créative. 
+                    J’ai ainsi proposé quatre pistes graphiques, 
+                    explorant différentes approches de mise en page et de hiérarchisation des informations. 
+                    À l’issue d’un vote interne et d’échanges avec le client, la proposition présentée ci-dessous a été retenue.
+                    <br><br>
+                    </p>
+                    <div class="box-img">
+                        <img src="../Images/SINOE/Home page Carrousel 1.png">
+                    </div>
+                </div>
+                <div class="lisere"></div>
+            </div>
+        </div>
+    </main>
+    <custom-footer>
+    </custom-footer>
+</body>
+
+
+<script src="../script.js"></script>
+<script src="../Composants/Bouton-Primaire/btn-primary.js"></script>
