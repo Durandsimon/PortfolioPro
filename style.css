@@ -241,6 +241,7 @@ a>h1{
 }
 
 .box-projet{
+
     padding: 2rem;
     height: 100%;
     border: 1px solid var(--blue30);
@@ -252,10 +253,13 @@ a>h1{
     background-size: cover;
     background-position: center;
     background-image: linear-gradient(
-    color-mix(in srgb, var(--blue100) 60%, transparent), 
-    color-mix(in srgb, var(--blue100) 60%, transparent)),
+    color-mix(in srgb, var(--blue100) 85%, transparent), 
+    color-mix(in srgb, var(--blue100) 98%, transparent)),
     var(--bg-img);
 
+    h2{
+        color: var(--blue10);
+    }
     .material-symbols-outlined{
         font-size: 4rem;
         color: var(--blue10);   
@@ -266,14 +270,17 @@ a>h1{
 
 .box-projet:hover{
     background-image: linear-gradient(
-    color-mix(in srgb, var(--blue100) 30%, transparent), 
-    color-mix(in srgb, var(--blue100) 40%, transparent)),
+    color-mix(in srgb, var(--blue100) 60%, transparent), 
+    color-mix(in srgb, var(--blue100) 70%, transparent)),
     var(--bg-img);
-    background-color: var(--blue80);
     h2{
+        color: var(--blue10);
         text-decoration: underline;
         text-decoration-thickness: 0.1rem;
         text-underline-offset: 0.2rem;
+    }
+    .material-symbols-outlined{
+        color: var(--blue10);   
     }
 }
 
