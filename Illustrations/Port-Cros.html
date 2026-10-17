@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Connexion au fichier CSS -->
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../Composants/Bouton-Primaire/btn-primary.css">
+
+ </head>
+
+
+
+<body>
+    <custom-header
+        breadcrumb='[
+            {"name":"Home","url":"../index.html"},
+            {"name":"Illustrations","url":"../illustrations.html"}
+        ]'>
+    </custom-header>
+    <main class="flex-direction-row  gap40 h80">
+        <div class="w50 gap40 flex-direction-column">
+            <h1>Port Cros</h1>
+            <p>
+                Dans le cadre d’un projet fictif réalisé durant mon master, 
+                nous avons travaillé sur la refonte de l’identité visuelle du Parc national de Port-Cros. 
+                J’ai été chargé de concevoir un ensemble d’icônes en cohérence avec l’univers graphique du nouveau logo, 
+                destinées à orienter les visiteurs au sein du parc. 
+                Ce travail s’est traduit par la création de différents panneaux de signalétique 
+                ainsi que d’un motion design présentant les activités proposées par le parc.
+            </p>            
+        </div>
+        <div class="w50 gap20 flex-direction-column scroll-block">
+            <div  style="padding-right: 1rem;" class="gap20 flex-direction-column scroll-block">
+                <div class="box-img">
+                    <img src="../Images/PortCros/mockup-panneau-1.jpg" >
+                </div>
+                
+                <div style="padding: 1rem;" class="gap10 flex-direction-column">
+                    <video src="../Vidéos/PortCros/Port-cros.mp4" type="video/mp4" autoplay loop muted></video>
+                    <div class="box-img">
+                        <img src="../Images/PortCros/Panneau plage.png">
+                    </div>
+                    <div class="box-img">
+                        <img src="../Images/PortCros/Panneau plongée.png">
+                    </div>
+                    <div class="box-img">
+                        <img src="../Images/PortCros/Panneau port.png">
+                    </div>
+                    <div class="box-img">
+                        <img src="../Images/PortCros/Panneau randonnée.png">
+                    </div>
+                    <div class="box-img">
+                        <img src="../Images/PortCros/Panneau vélo.png">
+                    </div>
+                </div>
+                <div class="lisere"></div>
+            </div>
+        </div>
+    </main>
+    <custom-footer>
+    </custom-footer>
+</body>
+
+
+<script src="../script.js"></script>
+<script src="../Composants/Bouton-Primaire/btn-primary.js"></script>
