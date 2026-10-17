@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Connexion au fichier CSS -->
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../Composants/Bouton-Primaire/btn-primary.css">
+
+ </head>
+
+
+
+<body>
+    <custom-header
+        breadcrumb='[
+            {"name":"Home","url":"../index.html"},
+            {"name":"Motion Design","url":"../motion-design.html"}
+        ]'>
+    </custom-header>
+    <main class="flex-direction-row  gap40 h80">
+        <div class="w50 gap40 flex-direction-column">
+            <h1>CTF Vannes</h1>
+            <div class="box-video">
+                <video src="../Vidéos/CTFVannes/CTF Vannes.mp4" type="video/mp4" autoplay loop muted controls></video>
+            </div>
+        
+            <custom-button
+                text="Linkedin HACK2G2"
+                href="https://lnkd.in/p/ewS5haKf"
+                target="_blank"
+                icon="arrow_outward">
+            </custom-button>             
+        </div>
+        <div class="w50 gap20 flex-direction-column">
+            <p style="margin-top: 7.5rem;">
+                À l’occasion d’un CTF (Capture The Flag) organisé à l’IUT de Vannes par l’équipe HACK2G2, 
+                j’ai eu l’opportunité de réaliser le teaser vidéo de l’événement. 
+                Un CTF est une compétition de cybersécurité dans laquelle les participants 
+                doivent résoudre des défis techniques pour retrouver des « flags » et accumuler des points.<br><br>
+
+                Réalisée sur After Effects, 
+                cette vidéo met en scène une animation du logo de l’événementet expliqueles informations importantes de l'évènement 
+                afin de promouvoir celui-ci et d’attirer l’attention des participants.<br><br>
+
+                Retrouvez également sur LinkedIn la publication présentant l’événement.
+
+            </p> 
+        </div>
+    </main>
+    <custom-footer>
+    </custom-footer>
+</body>
+
+
+<script src="../script.js"></script>
+<script src="../Composants/Bouton-Primaire/btn-primary.js"></script>

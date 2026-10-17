@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Connexion au fichier CSS -->
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../Composants/Bouton-Primaire/btn-primary.css">
+
+ </head>
+
+
+
+<body>
+    <custom-header
+        breadcrumb='[
+            {"name":"Home","url":"../index.html"},
+            {"name":"Motion Design","url":"../motion-design.html"}
+        ]'>
+    </custom-header>
+    <main class="flex-direction-row  gap40 h80">
+        <div class="w50 gap40 flex-direction-column">
+            <h1>Mon Univers</h1>
+            <p>
+                En parallèle de mes études et de mon activité professionnelle, 
+                je développe une véritable passion pour le motion design. 
+                Je réalise régulièrement des vidéos animées afin d’explorer de nouvelles techniques, 
+                d’expérimenter et de perfectionner mes compétences dans ce domaine. 
+                J’aime également partager mes créations sur les réseaux sociaux 
+                pour faire découvrir mon travail et échanger autour de mes réalisations.
+            </p> 
+            <custom-button
+                text="Mon compte TikTok"
+                href="https://www.tiktok.com/@veloutedetomates"
+                target="_blank"
+                icon="arrow_outward">
+            </custom-button>             
+        </div>
+        <div class="w50 gap20 flex-direction-column">
+            <div class="box-video">
+            <video src="../Vidéos/MonUnivers/Motions.mp4" type="video/mp4" autoplay loop muted></video>
+            </div>
+        </div>
+    </main>
+    <custom-footer>
+    </custom-footer>
+</body>
+
+
+<script src="../script.js"></script>
+<script src="../Composants/Bouton-Primaire/btn-primary.js"></script>
