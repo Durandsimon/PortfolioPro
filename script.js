@@ -42,7 +42,7 @@ class CustomFooter extends HTMLElement {
                     <p>Portfolio 2026</p>
                 </div>
                 <div>
-                    <img src="/PortfolioPro/Images/-fonctionnement-/Triangle.svg">
+                    <img src="../PortfolioPro/Images/-fonctionnement-/Triangle.svg">
                 </div>
 
             </footer>
