@@ -30,15 +30,19 @@ fetch("Composants/Composant-menu/menu.html")
             texts.forEach((item, index) => {
 
                 const title = item.querySelector("h2");
+                const icon = item.querySelector("span");
 
                 if (index === 2) {
                     title.style.color = "var(--blue10)";
+                    icon.style.color = "var(--blue10)";
                 }
                 else if (index === 1 || index === 3) {
                     title.style.color = "var(--blue30)";
+                    icon.style.color = "var(--blue30)";
                 }
                 else {
                     title.style.color = "var(--blue50)";
+                    icon.style.color = "var(--blue50)";
                 }
 
             });
@@ -56,15 +60,19 @@ fetch("Composants/Composant-menu/menu.html")
 
                     const title = item.querySelector("h2");
                     const distance = Math.abs(index - itemIndex);
+                    const icon = item.querySelector("span");
 
                     if (distance === 0) {
                         title.style.color = "var(--blue10)";
+                        icon.style.color = "var(--blue10)";
                     }
                     else if (distance === 1) {
                         title.style.color = "var(--blue30)";
+                        icon.style.color = "var(--blue30)";
                     }
                     else {
                         title.style.color = "var(--blue50)";
+                        icon.style.color = "var(--blue50)";
                     }
 
                 });

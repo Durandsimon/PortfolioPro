@@ -184,6 +184,13 @@ a>h1{
     }
 }
 
+/* menu home page */ 
+.link-menu{
+    display: flex;
+    justify-content: space-between;
+
+    transition: transform 0.3s ease;
+}
 
 /* liseré */
 .lisere {
@@ -475,7 +482,8 @@ a>h1{
             height: 50vh;
             display: flex;
             flex-direction: column;
-            justify-content: center;
+            justify-content: flex-end;
+            padding-bottom: 1rem;
         }
         .b2{
             height: 50vh;
@@ -483,6 +491,7 @@ a>h1{
             flex-direction: column;
             justify-content: flex-start;
             width: 100%;
+            padding-top: 1rem;
         }
     }
 
