@@ -52,3 +52,19 @@ class CustomFooter extends HTMLElement {
 }
 
 customElements.define("custom-footer", CustomFooter);
+
+
+// déroulant
+const diplomesToggle = document.getElementById("diplomes-toggle");
+const diplomesContent = document.getElementById("diplomes-content");
+
+diplomesToggle.addEventListener("click", () => {
+    // Inverse l'état actuel
+    const isClosed = diplomesContent.classList.toggle("is-closed");
+
+    // Met à jour la flèche
+    diplomesToggle.classList.toggle("is-closed", isClosed);
+
+    // Met à jour l'accessibilité
+    diplomesToggle.setAttribute("aria-expanded", !isClosed);
+});

@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Host+Grotesk:wght@300;400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_outward,arrow_forward');
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined');
 
 /* Ton CSS ici */
 
@@ -24,6 +24,7 @@
 body {
     font-family: "Host Grotesk", sans-serif;
     background-color: var(--blue90);
+    height: 100%;
     margin-right: 12.5%;
     margin-left: 12.5%;
     background-image: url('./Images/-fonctionnement-/fondGrain.png');
@@ -330,4 +331,172 @@ a>h1{
         max-height: 100%;
         border: 1px solid var(--blue30);
     }
+}
+
+/* menu déroulant */
+/* En-tête de la section */
+.diplomes-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+    padding: 0;
+
+    background: transparent;
+    border: none;
+    text-align: left;
+    cursor: pointer;
+
+    color: inherit;
+    font: inherit;
+}
+
+/* Suppression des marges par défaut du titre */
+.diplomes-header h2 {
+    margin: 0;
+}
+
+/* Flèche */
+.diplome-arrow {
+    color: var(--blue10);
+    transition: transform 0.3s ease;
+}
+
+/* Contenu ouvert */
+#diplomes-content {
+    display: flex;
+    overflow: hidden;
+    opacity: 1;
+    max-height: 1000px;
+
+    transition:
+        max-height 0.4s ease,
+        opacity 0.3s ease;
+}
+
+/* Contenu fermé */
+#diplomes-content.is-closed {
+    max-height: 0;
+    opacity: 0;
+    pointer-events: none;
+}
+
+/* Rotation de la flèche lorsque le contenu est fermé */
+.diplomes-header.is-closed .diplome-arrow {
+    transform: rotate(-180deg);
+}
+
+/* Indication visuelle du focus clavier */
+.diplomes-header:focus-visible {
+    outline: 2px solid var(--blue10);
+    outline-offset: 4px;
+    border-radius: 4px;
+}
+
+
+
+/* RESPONSIVE */
+@media screen and (max-width: 768px) {
+    h1{
+        font-size: 1.8rem;
+        font-weight: 800;
+        margin: 0;
+        color: var(--blue10);
+
+        transition: color 0.4s ease;
+    }
+
+    h2{
+        font-size: 1.15rem;
+        font-weight: 600;
+        margin: 0;
+        color: var(--blue10);
+    }
+
+    h3{
+        font-size: 0.825rem;
+        font-weight: 600;
+        margin: 0;
+        color: var(--blue10);
+    }
+
+    p{
+        font-size: 0.8rem;
+        font-weight: 200;
+        color: var(--blue20);
+        line-height: 1.2rem;
+    }
+
+    main{
+        padding: 0.5rem 0rem 0.5rem 0rem;
+    }
+
+    a{
+        font-size: 0.8rem;
+    }
+
+    .header{
+        height: 6vh;
+    }
+
+    .footer{
+        height: 6vh;
+    }
+
+    .h80{
+        height: 83.8vh;
+    }
+
+    .home{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    .w50{
+        width: 100%;
+    }
+
+    .parcours{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        
+    }
+
+    .gap10{
+        gap: 0.6rem;
+    }
+    .gap20{
+        gap: 0.6rem;
+    }
+    .gap40{
+        gap: 1.25rem;
+    }
+
+    .box{
+        margin: 0;
+        padding: 0.5rem 0.5rem 0.5rem 0.75rem;
+    }
+    .little-box{
+        padding: 0.1rem 0.5rem 0.1rem 0.5rem;
+        p{
+            font-size: 0.7rem;
+        }
+    }
+    .box-projet{
+        padding: 1rem;
+        .material-symbols-outlined{
+            font-size: 1.5rem;
+        }
+    }
+
+    .flex-direction-row{
+        display: flex;
+        flex-direction: column;
+    }
+        
 }

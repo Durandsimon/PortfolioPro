@@ -19,12 +19,17 @@
             {"name":"Parcours","url":"./mon-parcours.html"}
         ]'>
     </custom-header>
-    <main class="flex-direction-row  gap40 h80">
+    <main class="flex-direction-row  gap40 h80 parcours">
         <div class="w50 gap40 flex-direction-column">
             <h1>Mon Parcours</h1>
             <div class="gap20 flex-direction-column">
-                <h2>Diplômes</h2>
-                <div class="gap10  flex-direction-column">
+                <div class="flex-direction-row justify-content-space-between">
+                    <button class="diplomes-header" id="diplomes-toggle" type="button" aria-expanded="true" aria-controls="diplomes-content">
+                        <h2>Diplômes</h2>
+                        <span class="material-symbols-outlined diplome-arrow" style="color: var(--blue10);">keyboard_arrow_down</span>
+                    </button>
+                </div>
+                <div class="gap10  flex-direction-column" id="diplomes-content">
                     <div class="gap10 flex-direction-column box">
                         <h3>Master Direction Artistique (2022 - 2026)</h3>
                         <div class="flex-direction-row gap10 flex-wrap-wrap">
