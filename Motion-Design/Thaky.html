@@ -19,36 +19,49 @@
             {"name":"Motion Design","url":"../motion-design.html"}
         ]'>
     </custom-header>
-    <main class="flex-direction-row  gap40 h80">
+    <main class="flex-direction-row bloc gap40 h80">
         <div class="w50 gap40 flex-direction-column">
-            <h1>Thaky</h1>
-            <div class="box-video">
-                <video src="../Vidéos/Thaky/musique_cloudy_YT.mp4" type="video/mp4" autoplay loop muted controls></video>
-            </div>
-            <custom-button
-                text="Chaine Youtube"
-                href="https://youtube.com/@thakymusic?si=8qxvYktHvtMyeET5"
-                target="_blank"
-                icon="arrow_outward">
-            </custom-button>             
+            <section class="accordion gap40">
+                <button class="accordion-header flex-direction-row justify-content-space-between" type="button" aria-expanded="true" aria-controls="diplomes-content">
+                    <h2>Thaky</h2>
+                    <span class="material-symbols-outlined accordion-arrow" style="color: var(--blue10);">keyboard_arrow_down</span>
+                </button>
+                <div class="accordion-content">
+                    <p>
+                        Au cours de mon bachelor, j’ai réalisé un projet d’envergure : la création d’un clip entièrement conçu en motion design. 
+                        Ce projet représentait un véritable défi, tant par son ampleur que par les ambitions créatives que j’avais fixées.
+                    </p>            
+                           
+                </div>
+            </section>           
         </div>
-        <div class="w50 gap20 flex-direction-column">
-            <p style="margin-top: 7.5rem;">
-                Au cours de mon bachelor, j’ai réalisé un projet d’envergure : la création d’un clip entièrement conçu en motion design. 
-                Ce projet représentait un véritable défi, tant par son ampleur que par les ambitions créatives que j’avais fixées. <br><br>
+        
+        <div class="box-video">
+            <video src="../Vidéos/Thaky/musique_cloudy_YT.mp4" type="video/mp4" autoplay loop muted controls></video>
+        </div>
+        <div class="w50 gap20 flex-direction-column scroll-block">
+            <div class="gap20 flex-direction-column scroll-block">
+                <div style="padding: 1rem;" class="gap10 flex-direction-column">
+                    <p>
+                        Mon idée initiale était de mettre en scène un personnage traversant différents environnements avant d’arriver au Japon. 
+                        Cependant, au fil de la production, 
+                        j’ai pris conscience des contraintes de temps et de la charge de travail qu’impliquait une telle réalisation. 
+                        J’ai donc adapté mon concept pour simplifier l’animation du personnage, 
+                        remplacé par un petit slime rebondissant qui traverse les différents décors.<br><br>
 
-                Mon idée initiale était de mettre en scène un personnage traversant différents environnements avant d’arriver au Japon. 
-                Cependant, au fil de la production, 
-                j’ai pris conscience des contraintes de temps et de la charge de travail qu’impliquait une telle réalisation. 
-                J’ai donc adapté mon concept pour simplifier l’animation du personnage, 
-                remplacé par un petit slime rebondissant qui traverse les différents décors.<br><br>
-
-                Je souhaitais également créer l’ensemble des décors moi-même, 
-                mais j’ai finalement choisi d’utiliser des ressources issues de bibliothèques en ligne afin d’optimiser mon temps de production. 
-                Cette expérience m’a permis de mieux appréhender les contraintes d’un projet d’animation 
-                et d’apprendre à adapter mes ambitions créatives aux réalités de la production.
-
-            </p> 
+                        Je souhaitais également créer l’ensemble des décors moi-même, 
+                        mais j’ai finalement choisi d’utiliser des ressources issues de bibliothèques en ligne afin d’optimiser mon temps de production. 
+                        Cette expérience m’a permis de mieux appréhender les contraintes d’un projet d’animation 
+                        et d’apprendre à adapter mes ambitions créatives aux réalités de la production.
+                    </p>
+                    <custom-button
+                        text="Chaine Youtube"
+                        href="https://youtube.com/@thakymusic?si=8qxvYktHvtMyeET5"
+                        target="_blank"
+                        icon="arrow_outward">
+                    </custom-button>  
+                </div>
+            </div>
         </div>
     </main>
     <custom-footer>

@@ -19,22 +19,29 @@
             {"name":"UI Design","url":"../ui-design.html"}
         ]'>
     </custom-header>
-    <main class="flex-direction-row  gap40 h80">
-        <div class="w50 gap40 flex-direction-column">
-            <h1>DPE</h1>
-            <p>
-                Le DPE (Diagnostic de Performance Énergétique) évalue la consommation énergétique et les émissions 
-                de gaz à effet de serre des logements et des bâtiments. L’ADEME centralise ces diagnostics au sein d’un observatoire national, 
-                permettant de consulter les données et d’analyser les performances énergétiques du parc immobilier français. <br><br>
-                Durant mon alternance chez Scalian, j’ai eu l’opportunité de travailler sur ce projet, 
-                contribuant ainsi à une initiative au service de la transition énergétique et de la rénovation des bâtiments.
-            </p>   
-            <custom-button
-                text="Voir la maquette"
-                href="https://www.figma.com/design/AeDkKpaSBoSREPQ8Chx6e4/Mes-projets?node-id=5-30640"
-                target="_blank"
-                icon="arrow_outward">
-            </custom-button>          
+    <main class="flex-direction-row bloc gap40 h80">
+        <div class="w50 flex-direction-column">
+            <section class="accordion gap40">
+                <button class="accordion-header flex-direction-row justify-content-space-between" type="button" aria-expanded="true" aria-controls="diplomes-content">
+                    <h2>DPE</h2>
+                    <span class="material-symbols-outlined accordion-arrow" style="color: var(--blue10);">keyboard_arrow_down</span>
+                </button>
+                <div class="accordion-content">
+                    <p>
+                        Le DPE (Diagnostic de Performance Énergétique) évalue la consommation énergétique et les émissions 
+                        de gaz à effet de serre des logements et des bâtiments. L’ADEME centralise ces diagnostics au sein d’un observatoire national, 
+                        permettant de consulter les données et d’analyser les performances énergétiques du parc immobilier français. <br><br>
+                        Durant mon alternance chez Scalian, j’ai eu l’opportunité de travailler sur ce projet, 
+                        contribuant ainsi à une initiative au service de la transition énergétique et de la rénovation des bâtiments.
+                    </p>   
+                    <custom-button
+                        text="Voir la maquette"
+                        href="https://www.figma.com/design/AeDkKpaSBoSREPQ8Chx6e4/Mes-projets?node-id=5-30640"
+                        target="_blank"
+                        icon="arrow_outward">
+                    </custom-button>  
+                </div>
+            </section>        
         </div>
         <div class="w50 gap20 flex-direction-column scroll-block">
             <div  style="padding-right: 1rem;" class="gap20 flex-direction-column scroll-block">

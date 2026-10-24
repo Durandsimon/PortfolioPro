@@ -29,7 +29,7 @@ fetch("Composants/Composant-menu/menu.html")
 
             texts.forEach((item, index) => {
 
-                const title = item.querySelector("h1");
+                const title = item.querySelector("h2");
 
                 if (index === 2) {
                     title.style.color = "var(--blue10)";
@@ -54,7 +54,7 @@ fetch("Composants/Composant-menu/menu.html")
 
                 texts.forEach((item, itemIndex) => {
 
-                    const title = item.querySelector("h1");
+                    const title = item.querySelector("h2");
                     const distance = Math.abs(index - itemIndex);
 
                     if (distance === 0) {

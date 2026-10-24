@@ -334,8 +334,14 @@ a>h1{
 }
 
 /* menu déroulant */
-/* En-tête de la section */
-.diplomes-header {
+/* SECTION ACCORDÉON */
+.accordion {
+    display: flex;
+    flex-direction: column;
+}
+
+/* EN-TÊTE CLIQUABLE */
+.accordion-header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -346,50 +352,61 @@ a>h1{
 
     background: transparent;
     border: none;
-    text-align: left;
-    cursor: pointer;
 
     color: inherit;
     font: inherit;
+    text-align: left;
+
+    cursor: pointer;
 }
 
-/* Suppression des marges par défaut du titre */
-.diplomes-header h2 {
+/* TITRE */
+.accordion-header h2 {
     margin: 0;
 }
 
-/* Flèche */
-.diplome-arrow {
+/* FLÈCHE */
+.accordion-arrow {
+    flex-shrink: 0;
     color: var(--blue10);
+    display: none;
+
     transition: transform 0.3s ease;
 }
 
-/* Contenu ouvert */
-#diplomes-content {
-    display: flex;
-    overflow: hidden;
+/* CONTENU OUVERT */
+.accordion-content {
+    display: grid;
+    grid-template-rows: 1fr;
+    gap: 1rem;
     opacity: 1;
-    max-height: 1000px;
-
     transition:
-        max-height 0.4s ease,
-        opacity 0.3s ease;
+        grid-template-rows 0.35s ease,
+        opacity 0.25s ease;
 }
 
-/* Contenu fermé */
-#diplomes-content.is-closed {
-    max-height: 0;
+/* Nécessaire pour permettre au contenu de se réduire */
+.accordion-content > * {
+    min-height: 0;
+    overflow: hidden;
+}
+
+/* CONTENU FERMÉ */
+.accordion.is-closed .accordion-content {
+    grid-template-rows: 0fr;
     opacity: 0;
     pointer-events: none;
+    
+    display: none !important;
 }
 
-/* Rotation de la flèche lorsque le contenu est fermé */
-.diplomes-header.is-closed .diplome-arrow {
+/* FLÈCHE ORIENTÉE VERS LA GAUCHE LORSQUE LA SECTION EST FERMÉE */
+.accordion.is-closed .accordion-arrow {
     transform: rotate(-180deg);
 }
 
-/* Indication visuelle du focus clavier */
-.diplomes-header:focus-visible {
+/* ACCESSIBILITÉ CLAVIER */
+.accordion-header:focus-visible {
     outline: 2px solid var(--blue10);
     outline-offset: 4px;
     border-radius: 4px;
@@ -454,6 +471,19 @@ a>h1{
         flex-direction: column;
         align-items: flex-start;
         justify-content: center;
+        .b1{
+            height: 50vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .b2{
+            height: 50vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            width: 100%;
+        }
     }
 
     .w50{
@@ -483,8 +513,10 @@ a>h1{
     }
     .little-box{
         padding: 0.1rem 0.5rem 0.1rem 0.5rem;
+        width: fit-content;
         p{
             font-size: 0.7rem;
+            width: fit-content;
         }
     }
     .box-projet{
@@ -494,9 +526,29 @@ a>h1{
         }
     }
 
-    .flex-direction-row{
+    .bloc{
         display: flex;
         flex-direction: column;
+    }
+    
+    .accordion-arrow {
+        display: inline-block;
+    }
+
+    .accordion-header {
+        cursor: pointer;
+    }
+
+    .accordion.is-closed .accordion-content {
+        display: none !important;
+    }
+
+    .accordion-content{
+        padding: 1rem;
+    }
+
+    .accordion{
+        gap: 0.5rem;
     }
         
 }

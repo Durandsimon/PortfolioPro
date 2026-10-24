@@ -23,35 +23,35 @@
         <div class="w50 gap40 flex-direction-column">
             <h1>Mon Parcours</h1>
             <div class="gap20 flex-direction-column">
-                <div class="flex-direction-row justify-content-space-between">
-                    <button class="diplomes-header" id="diplomes-toggle" type="button" aria-expanded="true" aria-controls="diplomes-content">
+                <section class="accordion">
+                    <button class="accordion-header flex-direction-row justify-content-space-between" type="button" aria-expanded="true" aria-controls="diplomes-content">
                         <h2>Diplômes</h2>
-                        <span class="material-symbols-outlined diplome-arrow" style="color: var(--blue10);">keyboard_arrow_down</span>
+                        <span class="material-symbols-outlined accordion-arrow" style="color: var(--blue10);">keyboard_arrow_down</span>
                     </button>
-                </div>
-                <div class="gap10  flex-direction-column" id="diplomes-content">
-                    <div class="gap10 flex-direction-column box">
-                        <h3>Master Direction Artistique (2022 - 2026)</h3>
-                        <div class="flex-direction-row gap10 flex-wrap-wrap">
-                            <div class="little-box"><p class="nowrap">Direction Artistique</p></div>
-                            <div class="little-box"><p class="nowrap">Motion Design</p></div>
-                            <div class="little-box"><p class="nowrap">UI Design</p></div>
-                            <div class="little-box"><p  class="nowrap">Graphisme</p></div>
+                    <div class="gap10 flex-direction-column accordion-content">
+                        <div class="gap10 flex-direction-column box">
+                            <h3>Master Direction Artistique (2022 - 2026)</h3>
+                            <div class="flex-direction-row gap10 flex-wrap-wrap">
+                                <div class="little-box"><p class="nowrap">Direction Artistique</p></div>
+                                <div class="little-box"><p class="nowrap">Motion Design</p></div>
+                                <div class="little-box"><p class="nowrap">UI Design</p></div>
+                                <div class="little-box"><p  class="nowrap">Graphisme</p></div>
+                            </div>
+                        </div>
+                        <div class="gap10 flex-direction-column box">
+                            <h3>BTS SIO (2020 - 2022)</h3>
+                            <div class="flex-direction-row gap10 flex-wrap-wrap">
+                                <div class="little-box"><p  class="nowrap">Front-end</p></div>
+                                <div class="little-box"><p  class="nowrap">C#</p></div>
+                                <div class="little-box"><p  class="nowrap">JS</p></div>
+                                <div class="little-box"><p  class="nowrap">WordPress</p></div>
+                            </div>
+                        </div>
+                        <div class="gap10 flex-direction-column box">
+                            <h3>Bac Scientifique SVT (2020)</h3>
                         </div>
                     </div>
-                    <div class="gap10 flex-direction-column box">
-                        <h3>BTS SIO (2020 - 2022)</h3>
-                        <div class="flex-direction-row gap10 flex-wrap-wrap">
-                            <div class="little-box"><p  class="nowrap">Front-end</p></div>
-                            <div class="little-box"><p  class="nowrap">C#</p></div>
-                            <div class="little-box"><p  class="nowrap">JS</p></div>
-                            <div class="little-box"><p  class="nowrap">WordPress</p></div>
-                        </div>
-                    </div>
-                    <div class="gap10 flex-direction-column box">
-                        <h3>Bac Scientifique SVT (2020)</h3>
-                    </div>
-                </div>
+                </section>
             </div>
         </div>
         <div class="w50 gap20 flex-direction-column scroll-block">

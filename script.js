@@ -55,16 +55,50 @@ customElements.define("custom-footer", CustomFooter);
 
 
 // déroulant
-const diplomesToggle = document.getElementById("diplomes-toggle");
-const diplomesContent = document.getElementById("diplomes-content");
+document.querySelectorAll(".accordion").forEach((accordion) => {
+    const header = accordion.querySelector(".accordion-header");
+    const content = accordion.querySelector(".accordion-content");
 
-diplomesToggle.addEventListener("click", () => {
-    // Inverse l'état actuel
-    const isClosed = diplomesContent.classList.toggle("is-closed");
+    if (!header || !content) return;
 
-    // Met à jour la flèche
-    diplomesToggle.classList.toggle("is-closed", isClosed);
+    const mobile = window.matchMedia("(max-width: 768px)");
 
-    // Met à jour l'accessibilité
-    diplomesToggle.setAttribute("aria-expanded", !isClosed);
+    function updateAccordion() {
+        if (mobile.matches) {
+            // Sur mobile, on conserve le comportement accordéon.
+            const isClosed = accordion.classList.contains("is-closed");
+
+            header.setAttribute("aria-expanded", !isClosed);
+
+            if (isClosed) {
+                content.hidden = true;
+            } else {
+                content.hidden = false;
+            }
+        } else {
+            // Sur ordinateur, toutes les sections sont ouvertes.
+            accordion.classList.remove("is-closed");
+            content.hidden = false;
+            header.setAttribute("aria-expanded", "true");
+        }
+    }
+
+    header.addEventListener("click", () => {
+        // Aucun clic fonctionnel sur ordinateur.
+        if (!mobile.matches) return;
+
+        const isClosed = accordion.classList.toggle("is-closed");
+
+        header.setAttribute("aria-expanded", !isClosed);
+
+        if (isClosed) {
+            content.hidden = true;
+        } else {
+            content.hidden = false;
+        }
+    });
+
+    // Actualisation au chargement et au changement de largeur.
+    updateAccordion();
+    mobile.addEventListener("change", updateAccordion);
 });

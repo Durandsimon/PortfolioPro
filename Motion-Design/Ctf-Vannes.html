@@ -19,34 +19,45 @@
             {"name":"Motion Design","url":"../motion-design.html"}
         ]'>
     </custom-header>
-    <main class="flex-direction-row  gap40 h80">
-        <div class="w50 gap40 flex-direction-column">
-            <h1>CTF Vannes</h1>
-            <div class="box-video">
-                <video src="../Vidéos/CTFVannes/CTF Vannes.mp4" type="video/mp4" autoplay loop muted controls></video>
-            </div>
-        
-            <custom-button
-                text="Linkedin HACK2G2"
-                href="https://lnkd.in/p/ewS5haKf"
-                target="_blank"
-                icon="arrow_outward">
-            </custom-button>             
+    <main class="flex-direction-row bloc gap40 h80">
+        <div class="w50 flex-direction-column">
+            <section class="accordion gap40">
+                <button class="accordion-header flex-direction-row justify-content-space-between" type="button" aria-expanded="true" aria-controls="diplomes-content">
+                    <h2>CTF Vannes</h2>
+                    <span class="material-symbols-outlined accordion-arrow" style="color: var(--blue10);">keyboard_arrow_down</span>
+                </button>
+                <div class="accordion-content">
+                    <p>
+                        À l’occasion d’un CTF (Capture The Flag) organisé à l’IUT de Vannes par l’équipe HACK2G2, 
+                        j’ai eu l’opportunité de réaliser le teaser vidéo de l’événement. 
+                        Un CTF est une compétition de cybersécurité dans laquelle les participants 
+                        doivent résoudre des défis techniques pour retrouver des « flags » et accumuler des points.
+                    </p>            
+                           
+                </div>
+            </section>             
         </div>
-        <div class="w50 gap20 flex-direction-column">
-            <p style="margin-top: 7.5rem;">
-                À l’occasion d’un CTF (Capture The Flag) organisé à l’IUT de Vannes par l’équipe HACK2G2, 
-                j’ai eu l’opportunité de réaliser le teaser vidéo de l’événement. 
-                Un CTF est une compétition de cybersécurité dans laquelle les participants 
-                doivent résoudre des défis techniques pour retrouver des « flags » et accumuler des points.<br><br>
+        <div class="box-video">
+            <video src="../Vidéos/CTFVannes/CTF Vannes.mp4" type="video/mp4" autoplay loop muted controls></video>
+        </div>
+        <div class="w50 gap20 flex-direction-column scroll-block">
+            <div class="gap20 flex-direction-column scroll-block">
+                <div style="padding: 1rem;" class="gap10 flex-direction-column">
+                    <p>
+                        Réalisée sur After Effects, 
+                        cette vidéo met en scène une animation du logo de l’événementet expliqueles informations importantes de l'évènement 
+                        afin de promouvoir celui-ci et d’attirer l’attention des participants.<br><br>
 
-                Réalisée sur After Effects, 
-                cette vidéo met en scène une animation du logo de l’événementet expliqueles informations importantes de l'évènement 
-                afin de promouvoir celui-ci et d’attirer l’attention des participants.<br><br>
-
-                Retrouvez également sur LinkedIn la publication présentant l’événement.
-
-            </p> 
+                        Retrouvez également sur LinkedIn la publication présentant l’événement.
+                    </p>
+                    <custom-button
+                        text="Linkedin HACK2G2"
+                        href="https://lnkd.in/p/ewS5haKf"
+                        target="_blank"
+                        icon="arrow_outward">
+                    </custom-button>  
+                </div>
+            </div>
         </div>
     </main>
     <custom-footer>
