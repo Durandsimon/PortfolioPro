@@ -584,12 +584,12 @@ a>h1{
         position: fixed;
         top: 0;
         left: 0;
-        width: 100vw;
-        height: 100vh;
+        width: 100dvw;
+        height: 100dvh;
         justify-content: center;
         align-items: center;
         text-align: center;
-        background: var(--blue100);
+        background: var(--blue90);
         z-index: 99999;
     }
 }
