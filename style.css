@@ -90,11 +90,11 @@ a>h1{
 }
 
 .h100{
-    height: 100vh;
+    height: 100dvh;
 }
 
 .h80{
-    height: 80vh;
+    height: 80dvh;
 }
 
 .gap10{
@@ -157,7 +157,7 @@ a>h1{
     justify-content: space-between;
 
     width: 100%;
-    height: 10vh;
+    height: 10dvh;
 }
 
 .header_breadcrumb {
@@ -178,9 +178,9 @@ a>h1{
     justify-content: space-between;
 
     width: 100%;
-    height: 8vh;
+    height: 8dvh;
     img{
-        width: 1vh;
+        width: 1dvh;
     }
 }
 
@@ -199,7 +199,7 @@ a>h1{
 
 /* scroll block */
 .scroll-block{
-    height: 70vh;
+    height: 80dvh;
     overflow-y: auto;
 
     /* Firefox */
@@ -462,15 +462,15 @@ a>h1{
     }
 
     .header{
-        height: 6vh;
+        height: 6dvh;
     }
 
     .footer{
-        height: 6vh;
+        height: 6dvh;
     }
 
     .h80{
-        height: 83.8vh;
+        height: 83.8dvh;
     }
 
     .home{
@@ -479,14 +479,14 @@ a>h1{
         align-items: flex-start;
         justify-content: center;
         .b1{
-            height: 50vh;
+            height: 50dvh;
             display: flex;
             flex-direction: column;
             justify-content: flex-end;
             padding-bottom: 1rem;
         }
         .b2{
-            height: 50vh;
+            height: 50dvh;
             display: flex;
             flex-direction: column;
             justify-content: flex-start;
