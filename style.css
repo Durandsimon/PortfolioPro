@@ -199,7 +199,7 @@ a>h1{
 
 /* scroll block */
 .scroll-block{
-    height: 80vh;
+    height: 70vh;
     overflow-y: auto;
 
     /* Firefox */

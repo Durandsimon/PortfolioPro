@@ -55,6 +55,8 @@ customElements.define("custom-footer", CustomFooter);
 
 
 // déroulant
+
+
 document.querySelectorAll(".accordion").forEach((accordion) => {
     const header = accordion.querySelector(".accordion-header");
     const content = accordion.querySelector(".accordion-content");
@@ -63,20 +65,18 @@ document.querySelectorAll(".accordion").forEach((accordion) => {
 
     const mobile = window.matchMedia("(max-width: 768px)");
 
+    // Fermé par défaut sur mobile
+    if (mobile.matches) {
+        accordion.classList.add("is-closed");
+    }
+
     function updateAccordion() {
         if (mobile.matches) {
-            // Sur mobile, on conserve le comportement accordéon.
             const isClosed = accordion.classList.contains("is-closed");
 
             header.setAttribute("aria-expanded", !isClosed);
-
-            if (isClosed) {
-                content.hidden = true;
-            } else {
-                content.hidden = false;
-            }
+            content.hidden = isClosed;
         } else {
-            // Sur ordinateur, toutes les sections sont ouvertes.
             accordion.classList.remove("is-closed");
             content.hidden = false;
             header.setAttribute("aria-expanded", "true");
@@ -84,21 +84,27 @@ document.querySelectorAll(".accordion").forEach((accordion) => {
     }
 
     header.addEventListener("click", () => {
-        // Aucun clic fonctionnel sur ordinateur.
         if (!mobile.matches) return;
 
-        const isClosed = accordion.classList.toggle("is-closed");
+        const isClosed = accordion.classList.contains("is-closed");
 
-        header.setAttribute("aria-expanded", !isClosed);
+        // Ferme tous les autres accordéons
+        document.querySelectorAll(".accordion").forEach((other) => {
+            if (other === accordion) return;
 
-        if (isClosed) {
-            content.hidden = true;
-        } else {
-            content.hidden = false;
-        }
+            other.classList.add("is-closed");
+            other.querySelector(".accordion-content").hidden = true;
+            other.querySelector(".accordion-header")
+                .setAttribute("aria-expanded", "false");
+        });
+
+        // Ouvre ou ferme l'accordéon cliqué
+        accordion.classList.toggle("is-closed", !isClosed);
+        content.hidden = isClosed;
+        header.setAttribute("aria-expanded", isClosed);
     });
 
-    // Actualisation au chargement et au changement de largeur.
     updateAccordion();
     mobile.addEventListener("change", updateAccordion);
 });
+
