@@ -28,7 +28,7 @@
 body {
     font-family: "Host Grotesk", sans-serif;
     background-color: var(--blue90);
-    height: 100dvh;
+    min-height: 100dvh;
     overflow: hidden;
     margin-right: 12.5%;
     margin-left: 12.5%;
@@ -273,6 +273,10 @@ a>h1{
     }
 }
 
+.block-landscape{
+    display: none;
+}
+
 .box-projet{
 
     padding: 2rem;
@@ -426,7 +430,7 @@ a>h1{
 
 
 
-/* RESPONSIVE */
+/* RESPONSIVE MOBILE */
 @media screen and (max-width: 768px) {
     h1{
         font-size: 1.8rem;
@@ -570,4 +574,22 @@ a>h1{
         height: 65dvh;      
     }
         
+}
+
+
+
+@media screen and (max-width: 768px) and (orientation: landscape) {
+    .block-landscape{
+        display: flex;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background: var(--blue100);
+        z-index: 99999;
+    }
 }

@@ -20,6 +20,9 @@ class CustomHeader extends HTMLElement {
                 </div>
 
             </header>
+            <div class="block-landscape">
+                <p>🔄 Merci de tourner votre appareil à la verticale pour une meilleure expérience.</p>
+            </div>
         `;
     }
 
