@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Connexion au fichier CSS -->
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../Composants/Bouton-Primaire/btn-primary.css">
+
+ </head>
+
+
+
+<body>
+    <custom-header
+        breadcrumb='[
+            {"name":"Home","url":"../index.html"},
+            {"name":"Illustrations","url":"../illustrations.html"}
+        ]'>
+    </custom-header>
+    <main class="flex-direction-row bloc gap40 h80">
+        <div class="w50 flex-direction-column">
+            <section class="accordion gap40">
+                <button class="accordion-header flex-direction-row justify-content-space-between" type="button" aria-expanded="true" aria-controls="diplomes-content">
+                    <h2>Bali</h2>
+                    <span class="material-symbols-outlined accordion-arrow" style="color: var(--blue10);">keyboard_arrow_up</span>
+                </button>
+                <div class="accordion-content">
+                    <p>
+                        Lors d’un voyage touristique à Bali, 
+                        j’ai eu l’occasion de réaliser et de filmer différentes activités tout au long de mon séjour. 
+                        À la fin de ce voyage, j’ai souhaité créer un montage vidéo retraçant mes découvertes et mes expériences. 
+                        C’est dans le cadre de ce projet que j’ai conçu ces icônes afin de mieux situer les différents lieux visités et 
+                        d’illustrer les activités réalisées à chaque étape de mon voyage.
+                    </p>            
+                </div>
+            </section>            
+        </div>
+        <div class="w50 flex-direction-column">
+            <section class="accordion gap40">
+                <button class="accordion-header flex-direction-row justify-content-space-between" type="button" aria-expanded="true" aria-controls="diplomes-content">
+                    <h2>Le projet</h2>
+                    <span class="material-symbols-outlined accordion-arrow" style="color: var(--blue10);">keyboard_arrow_up</span>
+                </button>
+                <div class="accordion-content">
+                    <div class="scroll-block">
+                        <div style="padding-right: 1rem;" class="gap20 flex-direction-column scroll-block">
+                            <div class="box-img">
+                                <img src="../Images/Bali/Miniature.png" >
+                            </div>
+                            <div class="gap20 flex-direction-column">
+                                <div class="gap10 flex-direction-column">
+                                    <div class="box-video">
+                                        <video src="../Vidéos/Bali/compilation icones.mp4" type="video/mp4" autoplay loop muted></video>
+                                    </div>
+                                    <div style="display: flex; gap: 0.5rem;">
+                                        <div class="box-img" style="background-color: #FFF;">
+                                            <img src="../Images/Bali/Jungle.png">
+                                        </div>
+                                        <div class="box-img" style="background-color: #FFF;">
+                                            <img src="../Images/Bali/Lombok.png">
+                                        </div>
+                                    </div>
+                                    <div style="display: flex; gap: 0.5rem;">
+                                        <div class="box-img" style="background-color: #FFF;">
+                                            <img src="../Images/Bali/plongée.png">
+                                        </div>
+                                        <div class="box-img" style="background-color: #FFF;">
+                                            <img src="../Images/Bali/Rinjani.png">
+                                        </div>
+                                    </div>
+                                    <div style="display: flex; gap: 0.5rem;">
+                                        <div class="box-img" style="background-color: #FFF;">
+                                            <img src="../Images/Bali/surf.png">
+                                        </div>
+                                        <div class="box-img" style="background-color: #FFF;">
+                                            <img src="../Images/Bali/Temple.png">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="lisere"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>           
+        </div> 
+    </main>
+    <custom-footer>
+    </custom-footer>
+</body>
+
+
+<script src="../script.js"></script>
+<script src="../Composants/Bouton-Primaire/btn-primary.js"></script>
