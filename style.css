@@ -30,8 +30,8 @@ body {
     background-color: var(--blue90);
     min-height: 100dvh;
     overflow: hidden;
-    margin-right: 12.5%;
-    margin-left: 12.5%;
+    margin-right: 10%;
+    margin-left: 10%;
     background-image: url('./Images/-fonctionnement-/fondGrain.png');
     background-size: cover;       /* Adapte l'image à la taille de l'écran sans déformation */
     background-position: center;  /* Centre l'image */
@@ -298,7 +298,7 @@ a>h1{
         color: var(--blue10);
     }
     .material-symbols-outlined{
-        font-size: 4rem;
+        font-size: 3rem;
         color: var(--blue10);   
         display: flex;
         justify-content: flex-end;
